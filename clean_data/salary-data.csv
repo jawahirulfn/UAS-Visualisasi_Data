@@ -461,7 +461,6 @@ age,gender,education_level,job,years_of_experience,salary
 47.0,Female,phD,Full Stack Engineer,12.0,175000.0
 46.0,Female,Master's,Senior Project Engineer,13.0,180000.0
 32.0,Male,Bachelor's,Back end Developer,4.0,95000.0
-61.0,Male,phD,Software Engineer Manager,20.0,200000.0
 41.0,Male,Master's,Senior Software Engineer,11.0,165000.0
 37.0,Male,Master's,Senior Project Engineer,9.0,145000.0
 53.0,Male,phD,Software Engineer Manager,19.0,195000.0
@@ -473,9 +472,7 @@ age,gender,education_level,job,years_of_experience,salary
 50.0,Female,phD,Software Engineer Manager,16.0,190000.0
 27.0,Male,Bachelor's,Senior Project Engineer,4.0,115000.0
 42.0,Male,phD,Full Stack Engineer,14.0,180000.0
-57.0,Male,phD,Software Engineer Manager,18.0,195000.0
 35.0,Male,Master's,Senior Software Engineer,7.0,140000.0
-62.0,Male,phD,Software Engineer Manager,19.0,200000.0
 26.0,Female,Master's,Back end Developer,2.0,70000.0
 42.0,Female,Master's,Senior Project Engineer,11.0,170000.0
 41.0,Female,phD,Software Engineer Manager,14.0,185000.0
@@ -486,7 +483,6 @@ age,gender,education_level,job,years_of_experience,salary
 47.0,Male,phD,Senior Software Engineer,14.0,175000.0
 26.0,Male,Bachelor's,Front end Developer,2.0,70000.0
 24.0,Female,Bachelor's,Back end Developer,1.0,60000.0
-62.0,Male,phD,Software Engineer Manager,20.0,200000.0
 42.0,Male,phD,Senior Software Engineer,14.0,170000.0
 41.0,Female,Master's,Senior Project Engineer,11.0,165000.0
 23.0,Male,Bachelor's,Full Stack Engineer,1.0,55000.0
@@ -507,16 +503,13 @@ age,gender,education_level,job,years_of_experience,salary
 48.0,Male,phD,Senior Project Engineer,16.0,190000.0
 43.0,Female,Master's,Software Engineer Manager,11.0,160000.0
 54.0,Male,phD,Software Engineer Manager,17.0,195000.0
-60.0,Male,phD,Software Engineer Manager,18.0,195000.0
 54.0,Female,phD,Software Engineer Manager,14.0,190000.0
 27.0,Female,Master's,Full Stack Engineer,3.0,95000.0
 23.0,Male,Bachelor's,Back end Developer,1.0,55000.0
 45.0,Male,phD,Senior Software Engineer,13.0,185000.0
 32.0,Female,Master's,Full Stack Engineer,5.0,120000.0
-57.0,Male,phD,Software Engineer Manager,16.0,195000.0
 47.0,Male,phD,Software Engineer Manager,14.0,175000.0
 25.0,Female,Master's,Back end Developer,2.0,75000.0
-58.0,Male,phD,Software Engineer Manager,17.0,200000.0
 41.0,Female,Master's,Senior Software Engineer,12.0,160000.0
 41.0,Male,phD,Software Engineer Manager,12.0,175000.0
 47.0,Male,phD,Senior Software Engineer,15.0,180000.0
@@ -544,7 +537,6 @@ age,gender,education_level,job,years_of_experience,salary
 54.0,Male,phD,Software Engineer Manager,16.0,190000.0
 37.0,Male,Master's,Senior Software Engineer,9.0,150000.0
 31.0,Male,Master's,Senior Software Engineer,7.0,140000.0
-58.0,Female,phD,Software Engineer Manager,17.0,195000.0
 23.0,Female,Bachelor's,Back end Developer,1.0,55000.0
 52.0,Female,phD,Software Engineer Manager,16.0,190000.0
 32.0,Female,Master's,Full Stack Engineer,6.0,130000.0
@@ -573,14 +565,12 @@ age,gender,education_level,job,years_of_experience,salary
 41.0,Male,phD,Senior Project Engineer,12.0,165000.0
 24.0,Female,Bachelor's,Front end Developer,1.0,55000.0
 43.0,Male,phD,Senior Project Engineer,12.0,165000.0
-58.0,Male,phD,Software Engineer Manager,17.0,195000.0
 29.0,Female,Bachelor's,Front end Developer,3.0,85000.0
 52.0,Male,phD,Software Engineer Manager,18.0,200000.0
 36.0,Male,Master's,Full Stack Engineer,8.0,140000.0
 26.0,Male,Bachelor's,Back end Developer,2.0,65000.0
 47.0,Male,phD,Senior Project Engineer,16.0,190000.0
 32.0,Male,Master's,Full Stack Engineer,6.0,120000.0
-57.0,Male,phD,Software Engineer Manager,18.0,200000.0
 51.0,Male,phD,Software Engineer Manager,16.0,190000.0
 27.0,Female,Master's,Back end Developer,2.0,65000.0
 36.0,Male,Master's,Full Stack Engineer,7.0,130000.0
@@ -720,7 +710,6 @@ age,gender,education_level,job,years_of_experience,salary
 34.0,Female,Bachelor's,Full Stack Engineer,8.0,122485.0
 25.0,Male,phD,Software Engineer Manager,12.0,169159.0
 43.0,Male,Master's,Senior Software Engineer,21.0,187081.0
-53.0,Other,High School,Senior Project Engineer,31.0,166109.0
 27.0,Female,Master's,Front end Developer,5.0,78354.0
 25.0,Male,Bachelor's,Back end Developer,2.0,90249.0
 29.0,Female,Master's,Senior Software Engineer,6.0,132720.0
@@ -729,7 +718,6 @@ age,gender,education_level,job,years_of_experience,salary
 49.0,Female,Bachelor's,Back end Developer,19.0,120177.0
 25.0,Other,High School,Full Stack Engineer,2.0,69032.0
 35.0,Male,Master's,Senior Project Engineer,8.0,101332.0
-57.0,Female,phD,Full Stack Engineer,30.0,121450.0
 35.0,Female,Bachelor's,Senior Project Engineer,12.0,166375.0
 43.0,Male,Master's,Senior Software Engineer,21.0,185119.0
 37.0,Female,Bachelor's,Full Stack Engineer,10.0,149217.0
@@ -738,12 +726,9 @@ age,gender,education_level,job,years_of_experience,salary
 26.0,Male,Bachelor's,Back end Developer,3.0,75072.0
 34.0,Female,Master's,Full Stack Engineer,10.0,163398.0
 30.0,Male,High School,Senior Project Engineer,11.0,103947.0
-60.0,Female,phD,Software Engineer Manager,33.0,179180.0
 50.0,Male,Bachelor's,Back end Developer,23.0,175966.0
-58.0,Male,Master's,Senior Software Engineer,27.0,190004.0
 35.0,Female,Master's,Full Stack Engineer,10.0,152039.0
 28.0,Male,Master's,Front end Developer,5.0,76742.0
-57.0,Female,phD,Software Engineer Manager,33.0,191790.0
 46.0,Female,Bachelor's,Senior Software Engineer,20.0,139398.0
 28.0,Male,High School,Back end Developer,7.0,95845.0
 34.0,Male,Master's,Full Stack Engineer,12.0,160976.0
@@ -763,7 +748,6 @@ age,gender,education_level,job,years_of_experience,salary
 32.0,Male,Master's,Senior Project Engineer,11.0,128078.0
 24.0,Female,Bachelor's,Front end Developer,1.0,51265.0
 43.0,Male,High School,Senior Software Engineer,22.0,165919.0
-60.0,Female,phD,Software Engineer Manager,34.0,188651.0
 24.0,Male,Master's,Back end Developer,0.0,55538.0
 55.0,Male,Bachelor's,Senior Project Engineer,28.0,193964.0
 29.0,Female,Master's,Full Stack Engineer,4.0,104702.0
@@ -777,7 +761,6 @@ age,gender,education_level,job,years_of_experience,salary
 26.0,Male,Master's,Full Stack Engineer,4.0,102859.0
 41.0,Female,phD,Software Engineer Manager,13.0,138662.0
 46.0,Male,Bachelor's,Senior Project Engineer,23.0,181699.0
-57.0,Female,Master's,Full Stack Engineer,33.0,188232.0
 22.0,Female,High School,Back end Developer,0.0,51832.0
 54.0,Male,phD,Software Engineer Manager,28.0,188484.0
 42.0,Female,Master's,Senior Software Engineer,16.0,138286.0
@@ -803,9 +786,7 @@ age,gender,education_level,job,years_of_experience,salary
 46.0,Female,phD,Software Engineer Manager,23.0,168304.0
 34.0,Male,Bachelor's,Back end Developer,10.0,126593.0
 44.0,Male,Master's,Senior Software Engineer,19.0,152203.0
-55.0,Female,phD,Software Engineer Manager,30.0,183138.0
 35.0,Male,Master's,Full Stack Engineer,9.0,130275.0
-54.0,Male,Bachelor's,Senior Project Engineer,29.0,191915.0
 23.0,Female,High School,Back end Developer,2.0,62807.0
 46.0,Male,Master's,Senior Software Engineer,21.0,174305.0
 33.0,Female,Bachelor's,Full Stack Engineer,9.0,133326.0
@@ -816,10 +797,8 @@ age,gender,education_level,job,years_of_experience,salary
 49.0,Male,Master's,Software Engineer Manager,22.0,182237.0
 35.0,Female,Master's,Full Stack Engineer,10.0,151901.0
 31.0,Male,Bachelor's,Back end Developer,8.0,100052.0
-54.0,Other,High School,Senior Software Engineer,29.0,158254.0
 43.0,Male,Master's,Full Stack Engineer,20.0,167207.0
 33.0,Female,Master's,Senior Project Engineer,10.0,112439.0
-52.0,Female,phD,Software Engineer Manager,29.0,194214.0
 28.0,Male,Bachelor's,Full Stack Engineer,5.0,84407.0
 36.0,Female,Master's,Senior Software Engineer,13.0,139413.0
 43.0,Male,Bachelor's,Senior Project Engineer,20.0,143084.0
@@ -836,7 +815,6 @@ age,gender,education_level,job,years_of_experience,salary
 42.0,Female,Master's,Full Stack Engineer,14.0,163558.0
 46.0,Male,Bachelor's,Senior Project Engineer,24.0,166828.0
 38.0,Female,phD,Software Engineer Manager,15.0,144496.0
-54.0,Male,Master's,Senior Software Engineer,31.0,193746.0
 33.0,Female,Master's,Full Stack Engineer,8.0,122581.0
 27.0,Male,High School,Back end Developer,4.0,79767.0
 50.0,Female,Bachelor's,Senior Project Engineer,25.0,177177.0
@@ -862,14 +840,12 @@ age,gender,education_level,job,years_of_experience,salary
 45.0,Male,Master's,Senior Software Engineer,22.0,181902.0
 33.0,Female,Master's,Full Stack Engineer,9.0,136533.0
 38.0,Male,Bachelor's,Front end Developer,11.0,136285.0
-54.0,Female,phD,Software Engineer Manager,31.0,191818.0
 42.0,Male,Master's,Full Stack Engineer,19.0,176643.0
 28.0,Female,Bachelor's,Senior Project Engineer,4.0,70022.0
 30.0,Male,Master's,Front end Developer,6.0,99363.0
 43.0,Female,Master's,Senior Software Engineer,19.0,152944.0
 35.0,Male,Bachelor's,Back end Developer,10.0,123386.0
 44.0,Male,Master's,Full Stack Engineer,21.0,168906.0
-55.0,Female,Bachelor's,Senior Project Engineer,30.0,183020.0
 23.0,Male,High School,Front end Developer,1.0,47898.0
 39.0,Female,Master's,Senior Software Engineer,14.0,135853.0
 43.0,Male,Bachelor's,Full Stack Engineer,17.0,149198.0
@@ -894,7 +870,6 @@ age,gender,education_level,job,years_of_experience,salary
 49.0,Male,Bachelor's,Back end Developer,24.0,178284.0
 27.0,Female,Master's,Front end Developer,4.0,75969.0
 41.0,Male,Master's,Senior Project Engineer,15.0,143705.0
-56.0,Female,phD,Software Engineer Manager,31.0,197354.0
 46.0,Male,Bachelor's,Senior Software Engineer,22.0,174324.0
 32.0,Female,Master's,Full Stack Engineer,8.0,123781.0
 38.0,Male,phD,Software Engineer Manager,12.0,141735.0
@@ -905,7 +880,6 @@ age,gender,education_level,job,years_of_experience,salary
 31.0,Male,Bachelor's,Front end Developer,7.0,103282.0
 44.0,Female,phD,Software Engineer Manager,18.0,157872.0
 33.0,Male,Master's,Senior Project Engineer,10.0,117314.0
-54.0,Male,Bachelor's,Senior Software Engineer,30.0,186321.0
 33.0,Female,Master's,Full Stack Engineer,11.0,129686.0
 27.0,Male,High School,Back end Developer,3.0,68611.0
 51.0,Female,Master's,Senior Project Engineer,25.0,177913.0
@@ -953,7 +927,6 @@ age,gender,education_level,job,years_of_experience,salary
 46.0,Female,phD,Software Engineer Manager,21.0,174821.0
 34.0,Male,Bachelor's,Back end Developer,10.0,126520.0
 44.0,Male,Master's,Senior Software Engineer,18.0,152168.0
-55.0,Female,phD,Software Engineer Manager,29.0,190543.0
 35.0,Male,Master's,Full Stack Engineer,9.0,131547.0
 54.0,Male,Bachelor's,Senior Project Engineer,28.0,192292.0
 23.0,Female,High School,Back end Developer,1.0,52807.0
@@ -966,10 +939,8 @@ age,gender,education_level,job,years_of_experience,salary
 49.0,Male,Master's,Software Engineer Manager,23.0,182392.0
 35.0,Female,Master's,Full Stack Engineer,11.0,151078.0
 31.0,Male,Bachelor's,Back end Developer,8.0,100679.0
-54.0,Other,High School,Senior Software Engineer,29.0,158966.0
 43.0,Male,Master's,Full Stack Engineer,20.0,167924.0
 33.0,Female,Master's,Senior Project Engineer,10.0,113334.0
-52.0,Female,phD,Software Engineer Manager,29.0,194778.0
 28.0,Male,Bachelor's,Full Stack Engineer,4.0,77606.0
 36.0,Female,Master's,Senior Software Engineer,13.0,140010.0
 43.0,Male,Bachelor's,Senior Project Engineer,20.0,142421.0
@@ -986,7 +957,6 @@ age,gender,education_level,job,years_of_experience,salary
 42.0,Female,Master's,Full Stack Engineer,14.0,163978.0
 46.0,Male,Bachelor's,Senior Project Engineer,25.0,166958.0
 38.0,Female,phD,Software Engineer Manager,15.0,145052.0
-54.0,Male,Master's,Senior Software Engineer,32.0,195270.0
 33.0,Female,Master's,Full Stack Engineer,8.0,122970.0
 27.0,Male,High School,Back end Developer,4.0,80247.0
 50.0,Female,Bachelor's,Senior Project Engineer,25.0,177862.0
@@ -1011,7 +981,6 @@ age,gender,education_level,job,years_of_experience,salary
 45.0,Male,Master's,Senior Software Engineer,22.0,182506.0
 33.0,Female,Master's,Full Stack Engineer,9.0,136986.0
 38.0,Male,Bachelor's,Front end Developer,11.0,136662.0
-54.0,Female,phD,Software Engineer Manager,32.0,191510.0
 42.0,Male,Master's,Full Stack Engineer,19.0,177347.0
 28.0,Female,Bachelor's,Senior Project Engineer,3.0,70397.0
 34.0,Male,Master's,Software Engineer Manager,9.0,146075.0
@@ -1036,7 +1005,6 @@ age,gender,education_level,job,years_of_experience,salary
 45.0,Male,Master's,Senior Software Engineer,21.0,180367.0
 33.0,Female,Master's,Full Stack Engineer,9.0,135596.0
 38.0,Male,Bachelor's,Front end Developer,11.0,136062.0
-54.0,Female,phD,Software Engineer Manager,32.0,191267.0
 26.0,Male,Master's,Full Stack Engineer,3.0,91397.0
 28.0,Female,Bachelor's,Senior Project Engineer,4.0,82944.0
 48.0,Male,phD,Software Engineer Manager,23.0,188288.0
@@ -1056,7 +1024,6 @@ age,gender,education_level,job,years_of_experience,salary
 27.0,Female,Master's,Full Stack Engineer,4.0,83577.0
 33.0,Male,Bachelor's,Front end Developer,9.0,117904.0
 36.0,Female,Master's,Senior Project Engineer,11.0,134482.0
-54.0,Male,phD,Software Engineer Manager,30.0,184660.0
 30.0,Female,Bachelor's,Senior Software Engineer,5.0,100151.0
 26.0,Male,Master's,Full Stack Engineer,3.0,88678.0
 45.0,Female,phD,Senior Project Engineer,21.0,181285.0
