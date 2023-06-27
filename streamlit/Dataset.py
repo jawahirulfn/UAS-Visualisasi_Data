@@ -9,16 +9,17 @@ st.divider()
 
 # DATASET
 st.subheader('Dataset')
-st.markdown(" Data diperoleh dari berbagai sumber, termasuk survei, situs pekerjaan, dan sumber lain yang tersedia untuk umum. Dataset mencakup lima variabel: age, years_of_experience, job, education_level dan salary. Dataset ini sudah kami bersihkan / clean data. Proses clean data yang kami lakukan diantaranya mengubah nama beberapa nama kolom, handle duplicated data, handle null values, & handle outlier")
-st.write("Link dataset <a href='https://www.kaggle.com/datasets/mohithsairamreddy/salary-data'> di sini</a>", unsafe_allow_html=True)
+st.markdown("Data is obtained from a variety of sources, including surveys, job sites, and other publicly available sources. The dataset includes five variables: age, years_of_experience, job, education_level and salary. We have cleaned this dataset. Our clean data process includes renaming several column names, handle duplicated data, handle null values, & handle outliers")
+st.write("Link to dataset <a href='https://www.kaggle.com/datasets/mohithsairamreddy/salary-data'> here</a>", unsafe_allow_html=True)
 st.write(df)
 
 
 # CLEAN DATA
-st.subheader('Proses Clean Data')
+st.subheader('The process of cleaning data')
+st.markdown("These are some of the stages that we do in the clean data process. Resolve duplicate data, resolve null data, and resolve outliers")
 
 # 1 
-st.write("1. Mengatasi data duplikat")
+st.write("1. Resolve duplicate data")
 
 cek_duplikat = '''# Cek data duplikat
 data_new.duplicated().sum()'''
@@ -31,7 +32,7 @@ data_new.drop_duplicates(inplace=True)'''
 st.code(hapus_duplikat, language='python')
 
 # 2
-st.write("2. Mengatasi data null")
+st.write("2. Resolve null data")
 
 cek_null = '''# Cek Apakah ada null values
 data_new.isnull().sum()'''
@@ -44,7 +45,7 @@ data_new.dropna(inplace=True)'''
 st.code(hapus_duplikat, language='python')
 
 # 3
-st.write("3. Mengatasi Outlier")
+st.write("3. Resolve Outlier")
 
 batas = '''# Mencari batas MIN dan MAX kolom 'years_of_experience'
 # Mencari Q1 dan Q3
