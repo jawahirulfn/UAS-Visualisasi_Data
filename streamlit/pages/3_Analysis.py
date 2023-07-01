@@ -14,29 +14,26 @@ st.subheader("Top 5 Jobs")
 
 st.markdown("Visualize the 5 most jobs based on datasets")
 
-label_job = df['job']
+count_job = df['job'].value_counts().head(5).reset_index(name='count').rename(columns={'index' : 'job'})
 
-count_job = df['job'].value_counts().head(5)
-
-colors_job = [
-    '#5C2E7E', 
-    '#810CA8', 
-    '#C147E9', 
-    '#E5B8F4', 
-    '#EEE9DA' ]
-
-job_bar = go.Figure(
-    data=go.Bar (
-        x=label_job, 
-        y=count_job, 
-        marker=dict(color=colors_job), 
-        width=0.5
-    )
+job_bar = px.bar (
+    count_job, 
+    x=count_job['job'], 
+    y=count_job['count'], 
+    color='job',
+    color_discrete_map = {
+        'Full Stack Engineer' : '#5C2E7E',
+        'Software Engineer Manager' : '#810CA8',
+        'Senior Project Engineer' : '#C147E9',
+        'Senior Software Engineer' : '#E5B8F4',
+        'Data Scientist' : '#EEE9DA'
+    }
 )
 
-job_bar.update_layout (
-    xaxis_title="Job", 
-    yaxis_title="Number of workers"
+job_bar.update_layout(
+    xaxis_title='Job', 
+    yaxis_title='Number Of Workesr', 
+    title='Top 5 job'
 )
 
 st.plotly_chart(job_bar)
@@ -74,18 +71,22 @@ if salary_factor == 'Gender':
 elif salary_factor == 'Education Level':
 
     salary_mean = df.groupby(['education_level']).mean().reset_index()
-
+    
     salary_chart = px.bar(
         salary_mean, 
-        x='education_level', 
-        y='salary', 
+        x=salary_mean['education_level'], 
+        y=salary_mean['salary'], 
         title='Salary comparison by education level', 
         color='education_level'
     )
+
+    salary_chart.update_layout(
+        title = 'Average salary by education level', 
+        xaxis_title='Education Level', 
+        yaxis_title='Salary'
+    )
         
     st.plotly_chart(salary_chart)
-
-    st.table(salary_mean)
 
 # Visualisasi Pekerja berdasarkan kategori
 st.subheader('Workers by category')
@@ -112,7 +113,7 @@ if workers_factor == 'Gender':
         )
     )
 
-    workers_chart.update_layout(title_text='Perbandingan pekerja berdasarkan gender')
+    workers_chart.update_layout(title_text='Comparison of workers by gender')
 
     st.plotly_chart(workers_chart)
 
@@ -134,6 +135,6 @@ elif workers_factor == 'Education Level':
         )
     )
 
-    workers_chart.update_layout(title_text='Perbandingan karyawan berdasarkan tingkat pendidikan')
+    workers_chart.update_layout(title_text='Comparison of workers by education level')
     
     st.plotly_chart(workers_chart)
