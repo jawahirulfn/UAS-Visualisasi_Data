@@ -9,14 +9,40 @@ st.title("Data Analysis")
 
 st.divider()
 
-# Visualisasi top 5 pekerjaan
+# Visualisasi top 5 
 st.subheader("Top 5 Jobs")
 
-st.markdown("Visualize the 5 most jobs based on datasets")
+st.markdown("Visualize the top 5 by category")
 
-count_job = df['job'].value_counts().head(5).reset_index(name='count').rename(columns={'index' : 'job'})
+job_factor = st.selectbox('Select Category : ', ['top 5 job by salary', 'Top 5 popular job'])
 
-job_bar = px.bar (
+if job_factor == 'top 5 job by salary':
+    
+    salary_job = df.groupby('job').mean().reset_index().sort_values('salary').tail(5)
+
+    salary_job_chart = px.bar(
+        salary_job, 
+        x=salary_job['job'], 
+        y=salary_job['salary'],
+        color='job',
+        color_discrete_map= {
+            'Director of Data Science' : '#FEE0C0',
+            'VP of Finance' : '#FF7C7C',
+            'Chief Data Officer' : '#BE5A83',
+            'Chief Technology Officer' : '#B9005B' ,
+            'CEO' : '#804674'
+        }
+    )
+
+    salary_job_chart.update_layout(title='Top 5 Job by Salary')
+
+    st.plotly_chart(salary_job_chart)
+
+elif job_factor == 'Top 5 popular job':
+
+    count_job = df['job'].value_counts().head(5).reset_index(name='count').rename(columns={'index' : 'job'})
+
+    job_bar = px.bar (
     count_job, 
     x=count_job['job'], 
     y=count_job['count'], 
@@ -28,15 +54,15 @@ job_bar = px.bar (
         'Senior Software Engineer' : '#E5B8F4',
         'Data Scientist' : '#EEE9DA'
     }
-)
+    )
 
-job_bar.update_layout(
+    job_bar.update_layout(
     xaxis_title='Job', 
     yaxis_title='Number Of Workesr', 
-    title='Top 5 job'
-)
+    title='Top 5 Popular Job'
+    )
 
-st.plotly_chart(job_bar)
+    st.plotly_chart(job_bar)
 
 # Visualisasi Rata-rata gaji berdasarkan kategori
 st.subheader('Salary Comparison by category')
