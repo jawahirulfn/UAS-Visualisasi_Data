@@ -10,7 +10,7 @@ st.title("Data Analysis")
 st.divider()
 
 # Visualisasi top 5 
-st.subheader("Top 5 Jobs")
+st.header("Top 5 Jobs")
 
 st.markdown("Visualize the top 5 by category")
 
@@ -65,7 +65,7 @@ elif job_factor == 'Top 5 popular job':
     st.plotly_chart(job_bar)
 
 # Visualisasi Rata-rata gaji berdasarkan kategori
-st.subheader('Salary Comparison by category')
+st.header('Salary Comparison by category')
 
 st.markdown(f"Visualize a comparison of average salaries by selected category. There are 2 categories to choose from, namely 'gender' and 'education level'")
 
@@ -73,41 +73,41 @@ salary_factor = st.selectbox('Select Category: ', ['Gender', 'Education Level'])
 
 if salary_factor == 'Gender':
 
-    salary_mean = df.groupby(['gender']).mean().reset_index()
+    salary_mean = df.groupby('gender').mean().reset_index()
 
-    color_salary = ['#DB005B', '#810CA8']
-     
-    salary_chart = go.Figure(
-        data=go.Bar (
-            x=salary_mean['gender'], 
-            y=salary_mean['salary'], 
-            width=0.4,
-            marker=dict(color=color_salary)
-        )
+    salary_chart = px.bar(
+        salary_mean,
+        x=salary_mean['gender'],
+        y=salary_mean['salary'],
+        width=580,
+        color='gender',
+        color_discrete_map={'Female' : '#AF0171', 'Male' : '#FF7C7C'}
     )
 
-    salary_chart.update_layout(
-        title='Average Salary by Gender', 
-        xaxis_title='Gender', 
-        yaxis_title='Salary'
-    )
+    salary_chart.update_layout(title='Average Salary by Gender')
 
     st.plotly_chart(salary_chart)
+   
 
 elif salary_factor == 'Education Level':
 
-    salary_mean = df.groupby(['education_level']).mean().reset_index()
+    salary_mean = df.groupby('education_level').mean().reset_index()
     
     salary_chart = px.bar(
         salary_mean, 
         x=salary_mean['education_level'], 
         y=salary_mean['salary'], 
         title='Salary comparison by education level', 
-        color='education_level'
+        color='education_level',
+        color_discrete_map={
+            "Bachelor's" : '#FF7C7C',
+            "High School" : '#FEE0C0',
+            "Master's" : '#BE5A83',
+            "phD" : '#B9005B'}
     )
 
     salary_chart.update_layout(
-        title = 'Average salary by education level', 
+        title = 'Average salary by Education Level', 
         xaxis_title='Education Level', 
         yaxis_title='Salary'
     )
@@ -115,7 +115,7 @@ elif salary_factor == 'Education Level':
     st.plotly_chart(salary_chart)
 
 # Visualisasi Pekerja berdasarkan kategori
-st.subheader('Workers by category')
+st.header('Workers by category')
 
 st.markdown("Displays visualizations of workers by category. There are two categories to choose from: 'gender' and 'Education Level'")
 
