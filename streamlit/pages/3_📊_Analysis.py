@@ -9,6 +9,14 @@ st.title("Data Analysis")
 
 st.divider()
 
+st.sidebar.markdown('''
+> Section
+1. [Top 5 Jobs](#top-5-jobs)
+2. [Salary Comparison by category](#salary-comparison-by-category)
+3. [Workers by category](#workers-by-category)
+4. [Workers Education level by Gender](#workers-education-level-by-gender)
+''', unsafe_allow_html=True)
+
 # Visualisasi top 5 
 st.header("Top 5 Jobs")
 
@@ -18,7 +26,7 @@ job_factor = st.selectbox('Select Category : ', ['top 5 job by salary', 'Top 5 p
 
 if job_factor == 'top 5 job by salary':
     
-    salary_job = df.groupby('job').mean().reset_index().sort_values('salary').tail(5)
+    salary_job = df.groupby(['job']).mean().reset_index().sort_values('salary').tail(5)
 
     salary_job_chart = px.bar(
         salary_job, 
@@ -164,3 +172,25 @@ elif workers_factor == 'Education Level':
     workers_chart.update_layout(title_text='Comparison of workers by education level')
     
     st.plotly_chart(workers_chart)
+
+st.header('Workers Education level by Gender')
+
+st.write('Visualize comparison education level by gender')
+
+education_count = df.groupby(['gender', 'education_level']).size().reset_index(name='count')
+
+edu_chart = px.bar(
+    education_count, 
+    x='gender', 
+    y='count', 
+    color='education_level', 
+    color_discrete_map={
+        "Bachelor's" : '#FF7C7C',
+        "High School" : '#FEE0C0',
+        "Master's" : '#BE5A83',
+        "phD" : '#B9005B'},
+    title='Comparison education level by gender',
+    barmode='group'
+    )
+
+st.plotly_chart(edu_chart)
