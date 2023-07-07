@@ -3,9 +3,11 @@ import pandas as pd
 import plotly.graph_objects as go
 import plotly.express as px
 
-df = pd.read_csv(r"../clean_data/salary-data.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/jawahirulfn/UAS-Visualisasi_Data/main/clean_data/salary-data.csv')
 
 st.title("Data Analysis")
+
+st.markdown('In data analysis we use clean data. We clean data by several processes including handling null data, handling data duplication, and handling outliers.')
 
 st.divider()
 
@@ -181,14 +183,12 @@ education_count = df.groupby(['gender', 'education_level']).size().reset_index(n
 
 edu_chart = px.bar(
     education_count, 
-    x='gender', 
+    x='education_level', 
     y='count', 
-    color='education_level', 
+    color='gender', 
     color_discrete_map={
-        "Bachelor's" : '#FF7C7C',
-        "High School" : '#FEE0C0',
-        "Master's" : '#BE5A83',
-        "phD" : '#B9005B'},
+        "Male" : '#FEE0C0',
+        "Female" : '#B9005B',},
     title='Comparison education level by gender',
     barmode='group'
     )
