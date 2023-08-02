@@ -13,3 +13,4 @@ st.markdown("Data is obtained from a variety of sources, including surveys, job 
 st.write("Dataset : ""[salary data](https://www.kaggle.com/datasets/mohithsairamreddy/salary-data)")
 st.write("Project : ""[Github](https://github.com/jawahirulfn/UAS-Visualisasi_Data)")
 st.write(df)
+st.write("Hello")
