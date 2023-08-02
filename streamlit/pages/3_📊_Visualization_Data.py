@@ -7,7 +7,7 @@ df = pd.read_csv('https://raw.githubusercontent.com/jawahirulfn/UAS-Visualisasi_
 
 st.title("Data Analysis")
 
-st.markdown('In data analysis we use clean data. We clean data by several processes including handling null data, handling data duplication, and handling outliers.')
+st.markdown('In visualization data we use clean data. We clean data by several processes including handling null data, handling data duplication, and handling outliers.')
 
 st.divider()
 
