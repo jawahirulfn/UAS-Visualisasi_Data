@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv('https://raw.githubusercontent.com/jawahirulfn/UAS-Visualisasi_Data/main/dataset/Salary_Data.csv')
 
-st.title('Statistik Deskriptif')
+st.title('Exploration Data Analysis')
 
 # DATA INFO
 st.header('Data Information')
