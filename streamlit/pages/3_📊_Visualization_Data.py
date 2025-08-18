@@ -28,12 +28,18 @@ job_factor = st.selectbox('Select Category : ', ['top 5 job by salary', 'Top 5 p
 
 if job_factor == 'top 5 job by salary':
     
-    salary_job = df.groupby(['job']).mean().reset_index().sort_values('salary').tail(5)
+    salary_job = (
+        df.groupby('job')['salary']
+          .mean()
+          .reset_index()
+          .sort_values('salary')
+          .tail(5)
+    )
 
     salary_job_chart = px.bar(
         salary_job, 
-        x=salary_job['job'], 
-        y=salary_job['salary'],
+        x='job', 
+        y='salary',
         color='job',
         color_discrete_map= {
             'Director of Data Science' : '#FEE0C0',
@@ -53,23 +59,23 @@ elif job_factor == 'Top 5 popular job':
     count_job = df['job'].value_counts().head(5).reset_index(name='count').rename(columns={'index' : 'job'})
 
     job_bar = px.bar (
-    count_job, 
-    x=count_job['job'], 
-    y=count_job['count'], 
-    color='job',
-    color_discrete_map = {
-        'Full Stack Engineer' : '#5C2E7E',
-        'Software Engineer Manager' : '#810CA8',
-        'Senior Project Engineer' : '#C147E9',
-        'Senior Software Engineer' : '#E5B8F4',
-        'Data Scientist' : '#EEE9DA'
-    }
+        count_job, 
+        x='job', 
+        y='count', 
+        color='job',
+        color_discrete_map = {
+            'Full Stack Engineer' : '#5C2E7E',
+            'Software Engineer Manager' : '#810CA8',
+            'Senior Project Engineer' : '#C147E9',
+            'Senior Software Engineer' : '#E5B8F4',
+            'Data Scientist' : '#EEE9DA'
+        }
     )
 
     job_bar.update_layout(
-    xaxis_title='Job', 
-    yaxis_title='Number Of Workesr', 
-    title='Top 5 Popular Job'
+        xaxis_title='Job', 
+        yaxis_title='Number Of Workers', 
+        title='Top 5 Popular Job'
     )
 
     st.plotly_chart(job_bar)
@@ -77,18 +83,18 @@ elif job_factor == 'Top 5 popular job':
 # Visualisasi Rata-rata gaji berdasarkan kategori
 st.header('Salary Comparison by category')
 
-st.markdown(f"Visualize a comparison of average salaries by selected category. There are 2 categories to choose from, namely 'gender' and 'education level'")
+st.markdown("Visualize a comparison of average salaries by selected category. There are 2 categories to choose from, namely 'gender' and 'education level'")
 
 salary_factor = st.selectbox('Select Category: ', ['Gender', 'Education Level'])
 
 if salary_factor == 'Gender':
 
-    salary_mean = df.groupby('gender').mean().reset_index()
+    salary_mean = df.groupby('gender')['salary'].mean().reset_index()
 
     salary_chart = px.bar(
         salary_mean,
-        x=salary_mean['gender'],
-        y=salary_mean['salary'],
+        x='gender',
+        y='salary',
         width=580,
         color='gender',
         color_discrete_map={'Female' : '#AF0171', 'Male' : '#FF7C7C'}
@@ -101,12 +107,12 @@ if salary_factor == 'Gender':
 
 elif salary_factor == 'Education Level':
 
-    salary_mean = df.groupby('education_level').mean().reset_index()
+    salary_mean = df.groupby('education_level')['salary'].mean().reset_index()
     
     salary_chart = px.bar(
         salary_mean, 
-        x=salary_mean['education_level'], 
-        y=salary_mean['salary'], 
+        x='education_level', 
+        y='salary', 
         title='Salary comparison by education level', 
         color='education_level',
         color_discrete_map={
@@ -136,8 +142,7 @@ if workers_factor == 'Gender':
     workers_count = df.groupby('gender').size().reset_index(name='count')
 
     label = workers_count['gender']
-
-    value= workers_count['count']
+    value = workers_count['count']
 
     color_workers = ['#D14D72', '#7B2869'] 
 
@@ -158,7 +163,6 @@ elif workers_factor == 'Education Level':
     workers_count = df.groupby('education_level').size().reset_index(name='count')
 
     label = workers_count['education_level']
-
     value = workers_count['count']
 
     color_workers = ['#7B2869', '#D14D72', '#C85C8E', '#FFBABA']
@@ -191,6 +195,6 @@ edu_chart = px.bar(
         "Female" : '#B9005B',},
     title='Comparison education level by gender',
     barmode='group'
-    )
+)
 
 st.plotly_chart(edu_chart)
